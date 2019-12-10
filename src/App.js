@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <Person brand="Yamaha" model="R15"/>
-      <Person brand="Suzuki" model="GSX150"/>
+      <Person brand="Suzuki" model="GSX150"> with 16BHP</Person>
       <Person brand="Honda" model="CBR150"/>
 
     </div>

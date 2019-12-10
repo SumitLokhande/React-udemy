@@ -1,6 +1,11 @@
 import React from 'react';
+import './Person.css'
 
 const person = (props) =>{
-return <p>{props.brand} made {props.model} bike.</p>
+return (
+    <div className="card">
+        <p>{props.brand} made {props.model} bike.</p> <p>{props.children}</p>
+    </div>
+)
 }
 export default person;

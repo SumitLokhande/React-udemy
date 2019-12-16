@@ -20,7 +20,8 @@ class Counter extends Component {
       </ul>
     );
   }
-  incrementHandler() {
+  incrementHandler(item) {
+    console.log(item);
     this.setState({
       count: this.state.count + 1
     });
@@ -30,7 +31,10 @@ class Counter extends Component {
     return (
       <div>
         <span className="badge badge-primary">{this.state.count}</span>
-        <button onClick={this.incrementHandler} className="btn btn-primary">
+        <button
+          onClick={() => this.incrementHandler(1)}
+          className="btn btn-primary"
+        >
           Increment
         </button>
       </div>
